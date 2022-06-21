@@ -1,0 +1,7 @@
+version: "2.3"
+services:
+    angular-service:
+       container_name: event-project-frontend
+       build: .
+       ports:
+           - "4200:80"

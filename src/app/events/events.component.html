@@ -1,0 +1,37 @@
+<div class="container mg-top-1 ">
+    <div class="card-panel">
+        <div class="row">
+            <div class="col s6">
+                <h4>Eventos</h4>
+            </div>
+            <div class="col s6  right-align custom-btn-create">
+                <a routerLink="/event/create" class="btn primary-bg-color" ><i class="material-icons right ">add</i>Nuevo evento</a>
+            </div>
+        </div>
+   
+   
+    <table class="striped centered">
+        <thead>
+          <tr>
+              <th>N°</th>
+              <th>Título</th>
+              <th>Fecha</th>
+              <th>Acciones</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let event of events; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{event.title}}</td>
+            <td>{{event.date}}</td>
+            <td>  
+                <a routerLink="/event/{{event.id}}/show" class="material-icons primary-color custom-incon">visibility</a>
+                <a routerLink="/event/{{event.id}}/edit" class="material-icons primary-color custom-incon">edit</a>
+                <a routerLink="/" (click)="deleteEvent(event)" class="material-icons primary-color custom-incon">delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>

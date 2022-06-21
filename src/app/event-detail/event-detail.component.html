@@ -1,0 +1,20 @@
+<div class="container mg-top-1" *ngIf="event">
+    <div class="card-panel">
+        <h4 class="mg-bot-1">Detalles evento</h4>
+        <div class="row mg-bot-1">
+            <div class="col s6">
+                <p><span class="bold">TÍTULO:</span> {{event.title}}</p>
+            </div>
+            <div class="col s6">
+                <p><span class="bold">FECHA:</span> {{event.date}}</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col s3">
+                <a class="btn secondary-bg-color" (click)="goBack()"><i class="material-icons left">arrow_back</i>Atrás</a>
+            </div>
+        </div>   
+    </div>
+    
+</div>

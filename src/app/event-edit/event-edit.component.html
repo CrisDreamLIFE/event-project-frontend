@@ -1,0 +1,25 @@
+<div class="container mg-top-1" *ngIf="event">
+    <div class="card-panel">
+        <h4 class="mg-bot-1">Editar evento</h4>
+        <div class="row mg-bot-1">
+            <div class="col s6">
+                <label for="event-title">Título del evento</label>
+                <input id="event-title" [(ngModel)]="event.title">
+            </div>
+            <div class="col s6">
+                <label for="event-date">Fecha</label>
+                <input type="date" id="event-date" [(ngModel)]="event.date">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col s3">
+                <a class="btn secondary-bg-color" (click)="goBack()"><i class="material-icons left">arrow_back</i>Atrás</a>
+            </div>
+            <div class="col s3 offset-s6 right-align">
+                <a class="btn primary-bg-color" (click)="save()"><i class="material-icons right">send</i>Guardar</a>
+            </div>
+        </div>   
+    </div>
+    
+</div>

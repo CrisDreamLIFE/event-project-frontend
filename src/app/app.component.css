@@ -1,0 +1,31 @@
+.body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(255,255,255,1) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.mg-top-1{
+    margin-top: 50px !important;
+}
+
+.mg-bot-1{
+    margin-bottom: 50px !important;
+}
+
+.primary-color{
+    color: #59C254;
+}
+
+.primary-bg-color{
+    background-color: #59C254;
+}
+
+.secondary-bg-color{
+    background-color: #D87BB1;
+}
+
+.bold{
+    font-weight: 700;
+}
